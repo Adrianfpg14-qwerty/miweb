@@ -1,0 +1,60 @@
+Git (02/04/2022)
+Usos
+-Historial
+-Almacenar codigo
+-Trabajar en equipo
+-Cuando se introdujo un error
+
+Hay herramientas graficas para ver los cambios y demas pero tienen sus limitaciones, la versión de terminal es la mas utilizada y la mas completa.
+
+
+DESCARGA
+git-scm.com (Link descarga)
+Utiliza Git Bash (viene dentro de la instalación del setup para windows) como consola de comandos.
+
+En GitBash (comandos de configuracion inicial)
+git --version						    	            -> Version de windows
+git config --global user.name "Adrian Polo"			    -> Para configurar git con nuestro nombre 
+git congif --glogal user.email adrianfpg14@gmail.com    -> "" correo
+git config --global core.editor "code --wait"			-> Para establecer Vs Code como editor de texto por defecto (wait para que la terminal espere a que cerremos el editor de texto)
+git config --global -e 				            		-> Para ver nuestro archivo de config global (Todo esto que hemos hecho antes) [Solo me funciona dentro de vs code ctrl+ñ para abrir terminal]
+git config --global core.autocrlf true				    -> True para windows | input para Mac (Esto es para compatibilidad de caracteres, saltos de linea y codigo en general para un proyecto en el que se encuentren trabajando personas con sistemas operativos diferentes.
+
+
+PD: --global es para que sea una configuracion a nivel global no solo para un proyecto en especifico
+
+
+COMANDOS PARA MOVERSE
+ls			        -> Lista archivos y carpetas de un directorio (carpeta)
+ls -a			    -> Para listar archivos ocultos
+pwd			        -> Para saber donde me encuentro
+cd NAMECARPETA	   	-> Entrar a directorio
+cd .. 		    	-> Salir de directorio
+mkdir NAMECARPETA	-> Crear directorio
+
+
+MISCELANEOS
+git config -h (Para realizar mas configuraciones en git si te apetece)
+clear (ctrl + L)	-> Limpiar pantalla
+code .              -> Dentro del proyecto, abre VS Code
+
+
+COMANDOS PROYECTO
+git init		    -> Debes estar ya dentro del directorio (Creará una carpeta/directorio .git dentro, que estará oculto para listarlo debes usar "ls -a") 
+git status          -> Para ver el estado actual de nuestro repositorio.
+                        No commits yet (No hay commits aún)
+                        Untracked files (Archivos que no está siendo seguidos por git, para hacer que los sigan se debe usar git add.)
+git add             -> Por defecto git no sigue todos los archvios, para que lo haga debemos seleccionarlos, para esto es git add. Esto los agrega a la etapa de STAGE.
+    git add NAMEFILE.txt
+    git add NAMEFILE.txt NAMEFILE2.txt NAMEFILE3.txt
+    git add * .txt  (Todos los que sean .txt)
+    git add .       (Absolutamente todos los archivos en Untracked files (en rojo)) (NO USAR NUNCA, SE CONSIDERA MALA PRACTICA, a menos de que estes 100% seguro que todo es codigo util)
+
+    Una vez agregados, git los seguira y al presionar nuevamente git status aparecerán en verde en etapa de STAGE.
+    Si realizas un cambio, te aparecerá en rojo el archivo y dirá que ha sido modificado, para agregar el archivo con los cambios osea reemplazar, dale de nuevo con git add y el nombre del archivo nuevamente. Es como volverlo a subir, se reemplazará.
+    En realidad no se reemplazará en sí el archivo, solo se reemplazarán las modificaciones/cambios que hallamos realizado.
+
+git commit          ->  commit=Comprometer. Subirá todos los que archivos que estén en la etapa de STAGE y al hacer git status ya no habrá ningun archivo.
+    git commit -m "Mensaje con sentido"
+    
+    
