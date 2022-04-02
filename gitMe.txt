@@ -31,12 +31,16 @@ pwd			        -> Para saber donde me encuentro
 cd NAMECARPETA	   	-> Entrar a directorio
 cd .. 		    	-> Salir de directorio
 mkdir NAMECARPETA	-> Crear directorio
+rm NAMEFILE         -> Elimina archivo
+                    -> Elimina directorio/carpeta
+
 
 
 MISCELANEOS
 git config -h (Para realizar mas configuraciones en git si te apetece)
 clear (ctrl + L)	-> Limpiar pantalla
 code .              -> Dentro del proyecto, abre VS Code
+explorer .          -> Para abrir el explorador de archivos de windows en ese directorio
 
 
 COMANDOS PROYECTO
@@ -58,7 +62,5 @@ git commit          ->  commit=Comprometer. Subirá todos los que archivos que e
     git commit -m "Mensaje con sentido"
     git commit (Abrirá VS Code para colocar el mensaje allá directamente, una vez hecho eso, cierra el archivo en VScode y vuelve al GitBash)
 
-    Si modificas un archivo ya COMPROMETIDO (commitead, cosa que no existe en español) aparecerá modificado y tienes que nuevamente darle git add y luego git commit.
-
-    
-    
+    Si modificas un archivo ya COMPROMETIDO (commitead, cosa que no existe en español) aparecerá modificado y tienes que nuevamente darle git add para agregarlos a la etapa de STAGE  y luego git commit.
+    Si eliminas un archivo con rm NAMEFILE al darle git status te aparecerá en estado eliminado. Debes agregar a la etapa de STAGE con git add el archivo eliminado y luego dale en git commit para que se elimine.
