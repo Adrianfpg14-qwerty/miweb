@@ -56,5 +56,9 @@ git add             -> Por defecto git no sigue todos los archvios, para que lo 
 
 git commit          ->  commit=Comprometer. Subirá todos los que archivos que estén en la etapa de STAGE y al hacer git status ya no habrá ningun archivo.
     git commit -m "Mensaje con sentido"
+    git commit (Abrirá VS Code para colocar el mensaje allá directamente, una vez hecho eso, cierra el archivo en VScode y vuelve al GitBash)
+
+    Si modificas un archivo ya COMPROMETIDO (commitead, cosa que no existe en español) aparecerá modificado y tienes que nuevamente darle git add y luego git commit.
+
     
-    asadsd
+    
