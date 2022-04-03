@@ -86,3 +86,6 @@ git restore         -> Para restaurar archivos que están en el STAGE al cambio 
                                         git add a un archivo y quieres 
                                     En conclusión, para archivo eliminado:
                                     quieres quitar el 
+                                    
+                                    Caso de uso:
+                                    Eliminé en local un archivo y agregué ese cambio con add
