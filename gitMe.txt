@@ -80,7 +80,9 @@ git restore         -> Para restaurar archivos que están en el STAGE al cambio 
                                     Y si, si está el cambio de eliminado ya agregado al STAGE puedes devolverlo a su estado anterior (no eliminado).
                                     Y no idiota, no puedes traer a local un archivo que en el STAGE figura como eliminado (Porque que diga eliminado en el STAGE es solo un estado, no el archivo en sí, no puedes traer devuelta eso mk)
     
-                                    En conclusión, para cambios:
+                                    En conclusión, si queremos sacar algún cambio que hallamos pasado a la etapa de STAGE usamos 
+                                        (git restore --staged NAMEFILE)
+                                    para cambios:
                                         git add a un archivo y quieres 
                                     En conclusión, para archivo eliminado:
                                     quieres quitar el 
