@@ -88,3 +88,12 @@ git restore         -> Trabaja en el STAGE.
         Si eliminé un archivo en directorio manualmente o con rm (no git rm) y se halla en el STATUS en modo deleted, podemos recuperarlo y aparecerá en el local nuevamennte.
         Si eliminé y agregué el cambio de eliminado al STATUS (con o sin git rm) ya no podemos darle git restore NAMEFILE amenos de que lo restauremos a su estado anterior con git restore --staged NAMEFILE para que quede en su anterior modo de color rojo deleted y ahí si recuperarlo con git restore NAMEFILE.
 
+
+
+
+
+
+ERRORES 
+    GIT Bash (backspace goes forward like an space)
+        Right click on the menu/title bar of git bash, select options, click on terminal from the options on the left, under the 'type' dropdown, select 'xterm', then apply and save. Now open a new git bash and it should work :D.
+        
