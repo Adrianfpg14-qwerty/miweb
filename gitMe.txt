@@ -69,5 +69,11 @@ git commit          -> commit=Comprometer. Subirá todos los que archivos que es
     Si eliminas un archivo con rm NAMEFILE al darle git status te aparecerá en estado eliminado. Debes agregar a la etapa de STAGE con git add el archivo eliminado y luego dale en git commit para que se elimine con exito.
     En definitiva debes borrarlo primero y luego agregarlo a STAGE. Git hace estos 2 pasos con un solo comando. git rm NAMEFILE.
 
-git rm NAMEFILE     -> Borra y agrega al STAGE un archivo.
+git rm              -> Borra y agrega al STAGE un archivo.
+    git rm NAMEFILE
+    Literalmente git add/rm son para agregar al STAGE pero rm borra.
 
+git restore         -> Para restaurar archivos que están en el stage al cambio anterior o para traer devuelta ese cambio subido al local.
+    git restore --staged NAMEFILE   (Si hay un archivo en la etapa de STAGE y se quiere sacar ese cambio que se subió a la etapa de STAGE se usa este comando)
+                                    Ojo, solo quita el cambio agregado, no devuelve el archivo al directorio en el pc en local, para devolverlo debes usar git restore NAMEFILE.
+    git restore NAMEFILE            Devuelve el archivo que está en el STAGE al local, si hay uno ya previamente en el local con el mismo nombre 
