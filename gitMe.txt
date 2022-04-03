@@ -76,7 +76,7 @@ git rm              -> Borra y agrega al STAGE un archivo.
 git restore         -> Trabaja en el STAGE.
     git restore --staged NAMEFILE
     - Archivo nuevo 
-        Si ya lo habiamos subido, lo bajará a Untracked
+        Si ya lo habiamos subido al STAGE, lo bajará del STAGE a Untracked
     - Modifiqué un archivo
         Si ya habiamos subido sus cambios lo podemos poner en modo modificado nuevamente y seguir trabajando y luego si git add para agregar los cambios correctos. 
         No importa mucho ya que si igual ya está subido con sus cambios en STAGE, seguimos modificando y subimos los nuevos cambios y ya está, simple, sin andar restaurando nada, el STAGE sigue ahí en espera.
@@ -84,8 +84,7 @@ git restore         -> Trabaja en el STAGE.
     git restore NAMEFILE
     - Modifiqué un archivo
         Si ya lo habiamos agregado al STAGE con git add en un inicio, con git status veremos que hubo una modificación pero con git restore NAMEFILE el archivo que se halle en el STAGE reemplazará a la versión local.
-    
     - Eliminé un archivo
         Si eliminé un archivo en directorio manualmente o con rm (no git rm) y se halla en el STATUS en modo deleted, podemos recuperarlo y aparecerá en el local nuevamennte.
-        Si eliminé y agregué el cambio de eliminado al STATUS ya no podemos darle git restore NAMEFILE amenos de que lo restauremos a su estado anterior con git restore --staged NAMEFILE para que quede en su anterior modo de color rojo y ahí si recuperarlo con git restore NAMEFILE.
-                        
+        Si eliminé y agregué el cambio de eliminado al STATUS (con o sin git rm) ya no podemos darle git restore NAMEFILE amenos de que lo restauremos a su estado anterior con git restore --staged NAMEFILE para que quede en su anterior modo de color rojo deleted y ahí si recuperarlo con git restore NAMEFILE.
+
