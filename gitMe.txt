@@ -73,7 +73,14 @@ git rm              -> Borra y agrega al STAGE un archivo.
     git rm NAMEFILE
     Literalmente git add/rm son para agregar al STAGE pero rm borra.
 
-git restore         -> Para restaurar archivos que están en el stage al cambio anterior o para traer devuelta ese cambio subido al local.
-    git restore --staged NAMEFILE   (Si hay un archivo en la etapa de STAGE y se quiere sacar ese cambio que se subió a la etapa de STAGE se usa este comando)
-                                    Ojo, solo quita el cambio agregado, no devuelve el archivo al directorio en el pc en local, para devolverlo debes usar git restore NAMEFILE.
+git restore         -> Para restaurar archivos que están en el STAGE al cambio anterior o para traer devuelta a locl ese cambio subido al local.
+    git restore --staged NAMEFILE   (Si hay un archivo en la etapa de STAGE y se quiere devolver a ese cambio anterior que se subió a la etapa de STAGE se usa este comando)
+                                    Ojo, solo devuelve lo que estaba en STAGE a su estado anterior, no devuelve el archivo al directorio en el pc en local, para devolverlo debes usar git restore NAMEFILE.
     git restore NAMEFILE            Devuelve el archivo que está en el STAGE al local, si hay uno ya previamente en el local con el mismo nombre lo reemplaza mk y si no está en el local lo trae igualmente. Chacalidad compae. Modifica en tiempo real, el local se reemplaza incluso con VS Code abierto.
+                                    Y si, si está el cambio de eliminado ya agregado al STAGE puedes devolverlo a su estado anterior (no eliminado).
+                                    Y no idiota, no puedes traer a local un archivo que en el STAGE figura como eliminado (Porque que diga eliminado en el STAGE es solo un estado, no el archivo en sí, no puedes traer devuelta eso mk)
+    
+                                    En conclusión, para cambios:
+                                        git add a un archivo y quieres 
+                                    En conclusión, para archivo eliminado:
+                                    quieres quitar el 
