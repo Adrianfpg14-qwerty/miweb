@@ -76,4 +76,4 @@ git rm              -> Borra y agrega al STAGE un archivo.
 git restore         -> Para restaurar archivos que están en el stage al cambio anterior o para traer devuelta ese cambio subido al local.
     git restore --staged NAMEFILE   (Si hay un archivo en la etapa de STAGE y se quiere sacar ese cambio que se subió a la etapa de STAGE se usa este comando)
                                     Ojo, solo quita el cambio agregado, no devuelve el archivo al directorio en el pc en local, para devolverlo debes usar git restore NAMEFILE.
-    git restore NAMEFILE            Devuelve el archivo que está en el STAGE al local, si hay uno ya previamente en el local con el mismo nombre 
+    git restore NAMEFILE            Devuelve el archivo que está en el STAGE al local, si hay uno ya previamente en el local con el mismo nombre lo reemplaza mk y si no está en el local lo trae igualmente. Chacalidad compae. Modifica en tiempo real, el local se reemplaza incluso con VS Code abierto.
