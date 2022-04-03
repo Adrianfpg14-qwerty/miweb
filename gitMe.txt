@@ -45,9 +45,11 @@ explorer .          -> Para abrir el explorador de archivos de windows en ese di
 
 COMANDOS PROYECTO
 git init		    -> Debes estar ya dentro del directorio (Creará una carpeta/directorio .git dentro, que estará oculto para listarlo debes usar "ls -a") 
+
 git status          -> Para ver el estado actual de nuestro repositorio.
-                        No commits yet (No hay commits aún)
-                        Untracked files (Archivos que no está siendo seguidos por git, para hacer que los sigan se debe usar git add.)
+    No commits yet (No hay commits aún)
+    Untracked files (Archivos que no está siendo seguidos por git, para hacer que los sigan se debe usar git add.)
+
 git add             -> Por defecto git no sigue todos los archvios, para que lo haga debemos seleccionarlos, para esto es git add. Esto los agrega a la etapa de STAGE.
     git add NAMEFILE.txt
     git add NAMEFILE.txt NAMEFILE2.txt NAMEFILE3.txt
@@ -58,9 +60,14 @@ git add             -> Por defecto git no sigue todos los archvios, para que lo 
     Si realizas un cambio, te aparecerá en rojo el archivo y dirá que ha sido modificado, para agregar el archivo con los cambios osea reemplazar, dale de nuevo con git add y el nombre del archivo nuevamente. Es como volverlo a subir, se reemplazará.
     En realidad no se reemplazará en sí el archivo, solo se reemplazarán las modificaciones/cambios que hallamos realizado.
 
-git commit          ->  commit=Comprometer. Subirá todos los que archivos que estén en la etapa de STAGE y al hacer git status ya no habrá ningun archivo.
+git commit          -> commit=Comprometer. Subirá todos los que archivos que estén en la etapa de STAGE y al hacer git status ya no habrá ningun archivo.
     git commit -m "Mensaje con sentido"
     git commit (Abrirá VS Code para colocar el mensaje allá directamente, una vez hecho eso, cierra el archivo en VScode y vuelve al GitBash)
 
     Si modificas un archivo ya COMPROMETIDO (commitead, cosa que no existe en español) aparecerá modificado y tienes que nuevamente darle git add para agregarlos a la etapa de STAGE  y luego git commit.
-    Si eliminas un archivo con rm NAMEFILE al darle git status te aparecerá en estado eliminado. Debes agregar a la etapa de STAGE con git add el archivo eliminado y luego dale en git commit para que se elimine.
+    
+    Si eliminas un archivo con rm NAMEFILE al darle git status te aparecerá en estado eliminado. Debes agregar a la etapa de STAGE con git add el archivo eliminado y luego dale en git commit para que se elimine con exito.
+    En definitiva debes borrarlo primero y luego agregarlo a STAGE. Git hace estos 2 pasos con un solo comando. git rm NAMEFILE.
+
+git rm NAMEFILE     -> Borra y agrega al STAGE un archivo.
+
