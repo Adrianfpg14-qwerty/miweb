@@ -120,7 +120,6 @@ Archivo .gitignore
 git diff        -> Para ver los cambios realizados en una forma mas visual dentro de la terminal
     Si acabas de modificar algo escribe git diff
     Nota: Te aparecerá en rojo como si hubieras eliminado ciertas cosas cuando en realidad no lo hiciste y esto es porque diste un enter (salto de linea) y git lo considera una alteración ya que está al final de esa linea.
-    
 
 
 ERRORES 
