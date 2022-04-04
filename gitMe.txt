@@ -29,9 +29,12 @@ ls -a			            -> Para listar archivos ocultos
 pwd			                -> Para saber donde me encuentro
 cd NAMECARPETA	   	        -> Entrar a directorio
 cd .. 		    	        -> Salir de directorio
-mkdir NAMECARPETA	        -> Crear directorio
 rm NAMEFILE                 -> Elimina archivo
-rm -r NAMEDIRECTORY         -> Elimina directorio/carpeta
+mkdir NAMECARPETA	        -> Crear directorio
+rmdir                       -> Elimina directorio/carpeta
+
+
+
 mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
 
 
