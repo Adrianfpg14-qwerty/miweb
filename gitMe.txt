@@ -139,6 +139,10 @@ VER HISTORIAL
         (NAMERAMA)  Cabeza de una rama.
 
     (HEAD -> main)  HEAD indica en que nos encontramos en esa rama.
+
+
+VER UN ARCHIVO
+
     
 
 
@@ -159,7 +163,8 @@ BRANCH Y MERGE
     git checkout NAMERAMA
         Si te cambias de rama, el archivo en el local cambia.
 
-    
+    COMENTARIO
+    ESTE EL BOTON
     
 
 ERRORES 
