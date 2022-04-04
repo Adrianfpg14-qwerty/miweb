@@ -107,16 +107,20 @@ mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
 Archivo .gitignore
     Crea un archivo llamado .gitignore 
     Dentro especificas archivos o rutas para que ignorar y no vayan al repositorio 
-    Archivo tal cual, directorio con / al final, separados por enters, ejm:
+    Archivo tal cual, directorio con / al final, separados por saltos de linea, ejm:
         .env
         mis_imagenes/
         node_modules/
     y agregalo al STATUS con git add .gitignore y comprometelo con git commit.
 
     FALSO. Cuando vamos a comprometer, todos los archivos deben estar en el STAGE por lo que si hay un archivo UNTRACKED o no seguido no se podrá comprometer (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio).
+        Falso porque podemos comprometer teniendo archivos en UNTRACKED.
     VERDADERO. gitignore está para decirle a git que archivos o directorios (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio) no debe subir al repo y para que no nos aparezca que no están seguidos en UNTRACKED a cada rato.
 
-
+git diff        -> Para ver los cambios realizados en una forma mas visual dentro de la terminal
+    Si acabas de modificar algo escribe git diff
+    Nota: Te aparecerá en rojo como si hubieras eliminado ciertas cosas cuando en realidad no lo hiciste y esto es porque diste un enter (salto de linea) y git lo considera una alteración ya que está al final de esa linea.
+    
 
 
 ERRORES 
