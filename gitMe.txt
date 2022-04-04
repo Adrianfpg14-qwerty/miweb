@@ -195,7 +195,7 @@ REPOSITORIO
         Si tienes otra rama en el local, y la quieres subir al repo:
         git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
-        
+
 
             
 
@@ -217,3 +217,4 @@ REPOSITORIO
 ERRORES 
     GIT Bash (backspace goes forward like an space)
         Right click on the menu/title bar of git bash, select options, click on terminal from the options on the left, under the 'type' dropdown, select 'xterm', then apply and save. Now open a new git bash and it should work :D.
+    Git es sensible UPPERCASE, los comandos deben ser en minuscula.
