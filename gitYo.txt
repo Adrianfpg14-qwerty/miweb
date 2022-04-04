@@ -25,14 +25,15 @@ PD: --global es para que sea una configuracion a nivel global no solo para un pr
 
 
 COMANDOS PARA MOVERSE
-ls			        -> Lista archivos y carpetas de un directorio (carpeta)
-ls -a			    -> Para listar archivos ocultos
-pwd			        -> Para saber donde me encuentro
-cd NAMECARPETA	   	-> Entrar a directorio
-cd .. 		    	-> Salir de directorio
-mkdir NAMECARPETA	-> Crear directorio
-rm NAMEFILE         -> Elimina archivo
-                    -> Elimina directorio/carpeta
+ls			                -> Lista archivos y carpetas de un directorio (carpeta)
+ls -a			            -> Para listar archivos ocultos
+pwd			                -> Para saber donde me encuentro
+cd NAMECARPETA	   	        -> Entrar a directorio
+cd .. 		    	        -> Salir de directorio
+mkdir NAMECARPETA	        -> Crear directorio
+rm NAMEFILE                 -> Elimina archivo
+rm -r NAMEDIRECTORY         -> Elimina directorio/carpeta
+mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
 
 
 
@@ -89,6 +90,8 @@ git restore         -> Trabaja en el STAGE.
         Si eliminé y agregué el cambio de eliminado al STATUS (con o sin git rm) ya no podemos darle git restore NAMEFILE amenos de que lo restauremos a su estado anterior con git restore --staged NAMEFILE para que quede en su anterior modo de color rojo deleted y ahí si recuperarlo con git restore NAMEFILE.
 
 
+mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
+    Si lo haces te toca agregar al STAGE ambos cambios OLDNAMEFILE NEWNAMEFILE
 
 
 
@@ -96,4 +99,3 @@ git restore         -> Trabaja en el STAGE.
 ERRORES 
     GIT Bash (backspace goes forward like an space)
         Right click on the menu/title bar of git bash, select options, click on terminal from the options on the left, under the 'type' dropdown, select 'xterm', then apply and save. Now open a new git bash and it should work :D.
-        
