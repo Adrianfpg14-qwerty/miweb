@@ -163,9 +163,8 @@ BRANCH Y MERGE
     git checkout NAMERAMA
         Si te cambias de rama, el archivo en el local cambia.
 
-    COMENTARIO
-    ESTE EL BOTON
     
+
 
 ERRORES 
     GIT Bash (backspace goes forward like an space)
