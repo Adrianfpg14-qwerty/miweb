@@ -91,7 +91,10 @@ git restore         -> Trabaja en el STAGE.
 
 
 mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
-    Si lo haces te toca agregar al STAGE ambos cambios OLDNAMEFILE NEWNAMEFILE
+    Si lo haces te toca agregar al STAGE ambos cambios OLDNAMEFILE NEWNAMEFILE, 
+    Con este comando cambias nombre y agregas al STAGE de una vez. 
+    
+    git mv OLDNAMEFILE NEWNAMEFILE
 
 
 
