@@ -52,7 +52,7 @@ git status          -> Para ver el estado actual de nuestro repositorio.
     Untracked files (Archivos que no está siendo seguidos por git, para hacer que los sigan se debe usar git add.)
 
     La forma resumida es:
-        git status -s
+        git status -s (s de short)
 
     M   para modificaciones
     D   para eliminados
