@@ -160,7 +160,7 @@ BRANCH Y MERGE
         Si te cambias de rama y hay un archivo de igual nombre en ambos el archivo en el local cambia. Chacalida BD.
         Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED.
         El STAGE en sí no está en ninguna rama, es solo como una mesa en la que se ponen cosas, el commit es el que agrega realmente el archivo en una rama.
-
+        Con cat NAMEFILE y cambiando de rama y nuevamente ejecutando cat NAMEFILE puedes ver ambos archivos y ver sus diferencias.
 
 
 
