@@ -162,8 +162,10 @@ BRANCH Y MERGE
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
         Si te cambias de rama, el archivo en el local cambia.
+        Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED. 
+        El STAGE en sí no está en ninguna rama, el commit es el que agrega realmente el archivo en una rama. 
 
-    
+
 
 
 ERRORES 
