@@ -156,7 +156,7 @@ BRANCH Y MERGE
         git checkout -b SS-46-7WDA                          -> Otra así, colocando un numero de TICKET (esos numeros ellos se los inventan).
 
     ELIMINAR UNA RAMA
-    
+
 
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
@@ -179,11 +179,14 @@ REPOSITORIO
     Subir nuestro codigo a la nube con github
     New repository, name, public, not check nothing
     Copia y pega en git 
+
+    Unirnos al repo
         git remote add origina https....
             git remote      para indicarle que tenemos un servidor remoto en el cual subir nuestros cambios
             add origin      de donde obtendremos nuestro codigo y hacia donde se subiran
             https....       url donde están almacenados nuestros archivos (quedarán ps)
 
+    Añadir rama al repo
         git push -u origin main     -> la rama de main no se halla creada en github así se crea
             git push        subir nuestros cambios con respecto a la rama con la que estamos trabajando
             -u              para crear la rama
@@ -191,7 +194,8 @@ REPOSITORIO
             main            NAMERAMA
 
             Osea creame en el repo una rama llamada NAMERAMA y sube ahí lo que tengo en la rama en la que estoy justo ahora en Git Bash.
-  
+    
+    Añadir cambios al repo
         git push
             Despues del commit (trabaja solo en local) sube los cambios de la rama local en el repo (Ahora si global)
 
