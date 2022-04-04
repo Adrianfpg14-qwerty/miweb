@@ -117,11 +117,11 @@ Archivo .gitignore
         Falso porque podemos comprometer teniendo archivos en UNTRACKED.
     VERDADERO. gitignore está para decirle a git que archivos o directorios (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio) no debe subir al repo y para que no nos aparezca que no están seguidos en UNTRACKED a cada rato.
 
-git diff        -> Para ver los cambios realizados en una forma mas visual dentro de la terminal
-    Si acabas de modificar algo escribe git diff
+git diff        -> Para ver los cambios realizados en una forma mas visual dentro de la terminal (SOLO ARCHIVOS CON MODIFICICACIONES NO SUBIDAS A STATUS)
+    Si acabas de modificar algo escribe git diff y veras que se borró y que se agregó.
     Nota: Si te apareceriera lo mismo como si hubieras borrado y agregado lo mismo cuando en realidad no lo hiciste sucede porque diste un enter al final (salto de linea) y git lo considera una alteración ya que está al final de esa linea.
     Nota 2: Si git diff no te deja salir, presiona la q y listo.
-
+    git diff --staged       -> (ARCHIVOS CON MODIFICICACIONES YA SUBIDOS A STATUS)
     
 
 ERRORES 
