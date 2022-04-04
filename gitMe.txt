@@ -172,6 +172,47 @@ BRANCH Y MERGE
             git merge NAMERAMA
 
 
+REPOSITORIO
+    Subir nuestro codigo a la nube con github
+    New repository, name, public, not check nothing
+    Copia y pega en git 
+        git remote add origina https....
+            git remote      para indicarle que tenemos un servidor remoto en el cual subir nuestros cambios
+            add origin      de donde obtendremos nuestro codigo y hacia donde se subiran
+            https....       url donde están almacenados nuestros archivos (quedarán ps)
+
+        git push -u origin main     -> la rama de main no se halla creada en github así se crea
+            git push        subir nuestros cambios con respecto a la rama con la que estamos trabajando
+            -u              para crear la rama
+            origin          donde será creada
+            main            NAMERAMA
+
+            Osea creame en el repo una rama llamada NAMERAMA y sube ahí lo que tengo en la rama en la que estoy justo ahora en Git Bash.
+  
+        git push
+            Despues del commit (trabaja solo en local) sube los cambios de la rama local en el repo (Ahora si global)
+
+        Si tienes otra rama en el local, y la quieres subir al repo:
+        git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
+        git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
+        
+
+            
+
+
+    Username:
+        Coloca tu nombre de usuario
+        Adrianfpg14-qwerty
+    Password:
+        No es la contraseña de git
+        Vete a github/on your profile photo -> settings/developer settings/Personal access tokens/Generate new token:
+        Note: name de pc/usuario pc/lo que sea
+        Expiration: 30 days
+        checks: repo (all of repo) (Alcance del token)
+        Creala y copia el hash que te aparece y usa eso como contraseña en Git Bash
+
+
+
 
 ERRORES 
     GIT Bash (backspace goes forward like an space)
