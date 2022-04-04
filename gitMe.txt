@@ -55,6 +55,7 @@ git status          -> Para ver el estado actual de nuestro repositorio.
         git status -s
 
     M   para modificaciones
+    D   para eliminados
     ??  UNTRACKED archivos/directorios
 
 git add             -> Por defecto git no sigue todos los archvios, para que lo haga debemos seleccionarlos, para esto es git add. Esto los agrega a la etapa de STAGE.
@@ -102,8 +103,8 @@ mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
         git mv OLDNAMEFILE NEWNAMEFILE
 
 
-Carpeta .gitignore
-    Crea directorio llamado .gitignore 
+Archivo .gitignore
+    Crea un archivo llamado .gitignore 
     Dentro especificas archivos o rutas para que ignorar y no vayan al repositorio 
     Archivo tal cual, directorio con / al final, separados por enters, ejm:
         .env
@@ -111,8 +112,9 @@ Carpeta .gitignore
         node_modules/
     y agregalo al STATUS con git add .gitignore y comprometelo con git commit.
 
-    Cuando vamos a comprometer, todos los archivos deben estar en el STAGE por lo que si hay un archivo UNTRACKED o no seguido no se podrá comprometer (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio).
-    Para eso es el directorio .gitignore para agregar allí que archivos o directorios no debe tener en cuenta git para agregar al repo. Una vez hecho, no nos aparecerán los archivos o directorios ignorados en UNTRACKED.
+    FALSO. Cuando vamos a comprometer, todos los archivos deben estar en el STAGE por lo que si hay un archivo UNTRACKED o no seguido no se podrá comprometer (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio).
+    VERDADERO. gitignore está para decirle a git que archivos o directorios (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio) no debe subir al repo y para que no nos aparezca que no están seguidos en UNTRACKED a cada rato.
+
 
 
 
