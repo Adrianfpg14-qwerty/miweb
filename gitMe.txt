@@ -160,13 +160,15 @@ BRANCH Y MERGE
         Si te cambias de rama y hay un archivo de igual nombre en ambos el archivo en el local cambia. Chacalida BD.
         Cada rama tiene sus propios archivos commiteados por lo que si te cambias de rama estos archivos apareceran en el local (y volveran a desaparecerse al cambiar).
         
-        Aquellos archivos nuevos, saldrán como UNTRACKED en cualquier rama que estes, debes agregarlo Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED.
+        Aquellos archivos nuevos, saldrán como UNTRACKED en cualquier rama que estes, debes agregarlo.
         El STAGE en sí no está en ninguna rama, es solo como una mesa en la que se ponen cosas, el commit es el que agrega realmente el archivo en una rama.
+        Si hay archivos iguales en otra rama y te vas a cambiar a ella, procura add y commit en la rama actual porque se van a perder y serán reemplazados por los archivos de igual nombre de la otra rama.
+        
         Con cat NAMEFILE y cambiando de rama y nuevamente ejecutando cat NAMEFILE puedes ver ambos archivos y ver sus diferencias.
 
-
     TRAERNOS LOS CAMBIOS DE UNA RAMA A OTRA
-    
+        Debemos ubicarnos en la rama a la que se quieren traer esos cambios y ejecutar
+            git merge NAMERAMA
 
 
 
