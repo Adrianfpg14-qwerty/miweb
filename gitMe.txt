@@ -198,6 +198,18 @@ REPOSITORIO
 
             Osea creame en el repo una rama llamada NAMERAMA y sube ahí lo que tengo en la rama en la que estoy justo ahora en Git Bash.
     
+            Username:
+                Coloca tu nombre de usuario
+                Adrianfpg14-qwerty
+            Password:
+                No es la contraseña de git
+                Vete a github/on your profile photo -> settings/developer settings/Personal access tokens/Generate new token:
+                Note: name de pc/usuario pc/lo que sea
+                Expiration: 30 days
+                checks: repo (all of repo) (Alcance del token)
+                Creala y copia el hash que te aparece y usa eso como contraseña en Git Bash
+
+                
     Añadir cambios al repo
         git push
             Despues del commit (trabaja solo en local) sube los cambios de la rama local en el repo (Ahora si global)
@@ -206,24 +218,7 @@ REPOSITORIO
         git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
 
-
-            
-
-
-    Username:
-        Coloca tu nombre de usuario
-        Adrianfpg14-qwerty
-    Password:
-        No es la contraseña de git
-        Vete a github/on your profile photo -> settings/developer settings/Personal access tokens/Generate new token:
-        Note: name de pc/usuario pc/lo que sea
-        Expiration: 30 days
-        checks: repo (all of repo) (Alcance del token)
-        Creala y copia el hash que te aparece y usa eso como contraseña en Git Bash
-
-
-
-
+    
 ERRORES 
     GIT Bash (backspace goes forward like an space)
         Right click on the menu/title bar of git bash, select options, click on terminal from the options on the left, under the 'type' dropdown, select 'xterm', then apply and save. Now open a new git bash and it should work :D.
