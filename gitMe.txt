@@ -158,9 +158,15 @@ BRANCH Y MERGE
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
         Si te cambias de rama y hay un archivo de igual nombre en ambos el archivo en el local cambia. Chacalida BD.
-        Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED.
+        Cada rama tiene sus propios archivos commiteados por lo que si te cambias de rama estos archivos apareceran en el local (y volveran a desaparecerse al cambiar).
+        
+        Aquellos archivos nuevos, saldrán como UNTRACKED en cualquier rama que estes, debes agregarlo Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED.
         El STAGE en sí no está en ninguna rama, es solo como una mesa en la que se ponen cosas, el commit es el que agrega realmente el archivo en una rama.
         Con cat NAMEFILE y cambiando de rama y nuevamente ejecutando cat NAMEFILE puedes ver ambos archivos y ver sus diferencias.
+
+
+    TRAERNOS LOS CAMBIOS DE UNA RAMA A OTRA
+    
 
 
 
