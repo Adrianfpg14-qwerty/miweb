@@ -155,6 +155,9 @@ BRANCH Y MERGE
         git checkout -b features/name-de-la-funcionalidad   -> Algunas empresas lo hacen así
         git checkout -b SS-46-7WDA                          -> Otra así, colocando un numero de TICKET (esos numeros ellos se los inventan).
 
+    ELIMINAR UNA RAMA
+    
+
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
         Si te cambias de rama y hay un archivo de igual nombre en ambos el archivo en el local cambia. Chacalida BD.
