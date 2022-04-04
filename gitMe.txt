@@ -41,6 +41,7 @@ git config -h (Para realizar mas configuraciones en git si te apetece)
 clear (ctrl + L)	-> Limpiar pantalla
 code .              -> Dentro del proyecto, abre VS Code
 explorer .          -> Para abrir el explorador de archivos de windows en ese directorio
+cat NAMEFILE        -> Ver un archivo
 
 
 COMANDOS PROYECTO
@@ -141,11 +142,6 @@ VER HISTORIAL
     (HEAD -> main)  HEAD indica en que nos encontramos en esa rama.
 
 
-VER UN ARCHIVO
-
-    
-
-
 BRANCH Y MERGE
     Branch es realizar una bifurcación de la rama principal creando una rama aparte y trabajar en ella para mas tarde solicitar pegarnos nuevamenTe a la rama principal (main)(a este proceso se la conoce como merge).
     Creamos la rama (independiente de la principal), le agregamos commits y luego volvemos a la main.
@@ -161,9 +157,9 @@ BRANCH Y MERGE
 
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
-        Si te cambias de rama, el archivo en el local cambia.
-        Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED. 
-        El STAGE en sí no está en ninguna rama, el commit es el que agrega realmente el archivo en una rama. 
+        Si te cambias de rama y hay un archivo de igual nombre en ambos el archivo en el local cambia. Chacalida BD.
+        Si no comiteas un archivo al cambiar de rama en ambas te dirá UNTRACKED.
+        El STAGE en sí no está en ninguna rama, es solo como una mesa en la que se ponen cosas, el commit es el que agrega realmente el archivo en una rama.
 
 
 
