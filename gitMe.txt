@@ -20,7 +20,6 @@ git config --global core.editor "code --wait"			-> Para establecer Vs Code como 
 git config --global -e 				            		-> Para ver nuestro archivo de config global (Todo esto que hemos hecho antes) [Solo me funciona dentro de vs code ctrl+ñ para abrir terminal]
 git config --global core.autocrlf true				    -> True para windows | input para Mac (Esto es para compatibilidad de caracteres, saltos de linea y codigo en general para un proyecto en el que se encuentren trabajando personas con sistemas operativos diferentes.
 
-
 PD: --global es para que sea una configuracion a nivel global no solo para un proyecto en especifico
 
 
@@ -61,7 +60,6 @@ git status          -> Para ver el estado actual de nuestro repositorio.
 git add             -> Por defecto git no sigue todos los archvios, para que lo haga debemos seleccionarlos, para esto es git add. Esto los agrega a la etapa de STAGE.
     git add NAMEFILE.txt
     git add NAMEFILE.txt NAMEFILE2.txt NAMEFILE3.txt
-    git add NAMEDIRECTORY/
     git add * .txt  (Todos los que sean .txt)
     git add .       (Absolutamente todos los archivos en Untracked files (en rojo)) (NO USAR NUNCA, SE CONSIDERA MALA PRACTICA, a menos de que estes 100% seguro que todo es codigo util)
 
