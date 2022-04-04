@@ -139,7 +139,7 @@ VER HISTORIAL
         (NAMERAMA)  Cabeza de una rama.
 
     (HEAD -> main)  HEAD indica en que nos encontramos en esa rama.
-
+    
 
 
 BRANCH Y MERGE
@@ -155,7 +155,10 @@ BRANCH Y MERGE
         git checkout -b features/name-de-la-funcionalidad   -> Algunas empresas lo hacen así
         git checkout -b SS-46-7WDA                          -> Otra así, colocando un numero de TICKET (esos numeros ellos se los inventan).
 
+    CAMBIARNOS DE RAMA
+    git checkout NAMERAMA
 
+    
     
 
 ERRORES 
