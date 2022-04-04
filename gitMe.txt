@@ -79,6 +79,7 @@ git commit          -> commit=Comprometer. Subirá todos los que archivos que es
 
 git rm              -> Borra y agrega al STAGE un archivo.
     git rm NAMEFILE
+    git rm NAMEFILE NAMEFILE
     Literalmente git add/rm son para agregar al STAGE pero rm borra.
 
 git restore         -> Trabaja en el STAGE.
