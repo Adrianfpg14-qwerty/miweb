@@ -91,12 +91,16 @@ git restore         -> Trabaja en el STAGE.
         No importa mucho ya que si igual ya está subido con sus cambios en STAGE, seguimos modificando y subimos los nuevos cambios y ya está, simple, sin andar restaurando nada, el STAGE sigue ahí en espera.
 
     git restore NAMEFILE
+    Para restaurar los cambios modificados
     - Modifiqué un archivo
         Si ya lo habiamos agregado al STAGE con git add en un inicio, con git status veremos que hubo una modificación pero con git restore NAMEFILE el archivo que se halle en el STAGE reemplazará a la versión local.
     - Eliminé un archivo
-        Si eliminé un archivo en directorio manualmente o con rm (no git rm) y se halla en el STATUS en modo deleted, podemos recuperarlo y aparecerá en el local nuevamennte.
+        Si eliminé un archivo en directorio manualmente o con rm (no git rm porque lo agregará al STATUS) y se halla en el STATUS en modo deleted, podemos recuperarlo y aparecerá en el local nuevamennte.
         Si eliminé y agregué el cambio de eliminado al STATUS (con o sin git rm) ya no podemos darle git restore NAMEFILE amenos de que lo restauremos a su estado anterior con git restore --staged NAMEFILE para que quede en su anterior modo de color rojo deleted y ahí si recuperarlo con git restore NAMEFILE.
 
+    En definitiva si modificamos un archivo y lo agregamos al STAGE y queremos que esos cambios no se suban y restaurar los cambios al local:
+        git restore --staged NAMEFILE   (Ponerlo en rojo)
+        git restore NAMEFILE            (Restaurarlo al local, osease recuperarlo)
 
 mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
     Si lo haces te toca agregar al STAGE ambos cambios OLDNAMEFILE NEWNAMEFILE, 
@@ -121,7 +125,20 @@ git diff        -> Para ver los cambios realizados en una forma mas visual dentr
     Si acabas de modificar algo escribe git diff y veras que se borró y que se agregó.
     Nota: Si te apareceriera lo mismo como si hubieras borrado y agregado lo mismo cuando en realidad no lo hiciste sucede porque diste un enter al final (salto de linea) y git lo considera una alteración ya que está al final de esa linea.
     Nota 2: Si git diff no te deja salir, presiona la q y listo.
-    git diff --staged       -> (ARCHIVOS CON MODIFICICACIONES YA SUBIDOS A STATUS)
+    git diff --staged       -> Ver las modificaciones de los archivos en etapa de STAGE (ARCHIVOS CON MODIFICICACIONES YA SUBIDOS A STATUS)
+    
+
+VER HISTORIAL
+    git log             -> Revisar todo el historial. Se verán name, correo, mensaje de commit.
+    git log --oneline   -> Mejor apartado visual, saldrán los cambios separados por hashes y al frente su mensaje de commit.
+    Nota: q para salir.
+
+
+BRANCH Y MERGE
+    Branch es realizar una bifurcación de la rama principal creando una rama aparte y trabajar en ella para mas tarde solicitar pegarnos nuevamenTe a la rama principal (main)(a este proceso se la conoce como merge).
+    
+    La rama main es la principal.
+    git Branch          -> Para saber en que rama nos encontramos. 
     
 
 ERRORES 
