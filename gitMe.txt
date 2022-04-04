@@ -166,6 +166,7 @@ BRANCH Y MERGE
         
         Con cat NAMEFILE y cambiando de rama y nuevamente ejecutando cat NAMEFILE puedes ver ambos archivos y ver sus diferencias.
 
+
     TRAERNOS LOS CAMBIOS DE UNA RAMA A OTRA
         Debemos ubicarnos en la rama a la que se quieren traer esos cambios y ejecutar
             git merge NAMERAMA
