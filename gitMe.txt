@@ -122,15 +122,17 @@ mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
 Archivo .gitignore
     Crea un archivo llamado .gitignore 
     Dentro especificas archivos o rutas para que ignorar y no vayan al repositorio 
-    Archivo tal cual, directorio con / al final, separados por saltos de linea, ejm:
+    Archivo tal cual, directorio con / al final (como buena practica) pero no es necesario, separados por saltos de linea, ejm:
         .env
         mis_imagenes/
         node_modules/
+        # Este es un comentario, se ignora la carpeta node_modules
+        *.html      -> Todos los html (Comodín *)
     y agregalo al STATUS con git add .gitignore y comprometelo con git commit.
 
     FALSO. Cuando vamos a comprometer, todos los archivos deben estar en el STAGE por lo que si hay un archivo UNTRACKED o no seguido no se podrá comprometer (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio).
         Falso porque podemos comprometer teniendo archivos en UNTRACKED.
-    VERDADERO. gitignore está para decirle a git que archivos o directorios (Archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio) no debe subir al repo y para que no nos aparezca que no están seguidos en UNTRACKED a cada rato.
+    VERDADERO. gitignore está para decirle a git que archivos o directorios (Carpeta , archivos personales, archivos con configuraciones o de practica que no queremos subir al repositorio) no debe subir al repo y para que no nos aparezca que no están seguidos en UNTRACKED a cada rato.
 
 git diff        -> Para ver los cambios realizados en una forma mas visual dentro de la terminal (SOLO ARCHIVOS CON MODIFICICACIONES NO SUBIDAS A STATUS)
     Si acabas de modificar algo escribe git diff y veras que se borró y que se agregó.
@@ -167,7 +169,7 @@ BRANCH Y MERGE
         git checkout -b SS-46-7WDA                          -> Otra así, colocando un numero de TICKET (esos numeros ellos se los inventan).
 
     ELIMINAR UNA RAMA
-
+        No idea bro
 
     CAMBIARNOS DE RAMA
     git checkout NAMERAMA
@@ -181,10 +183,19 @@ BRANCH Y MERGE
         Con cat NAMEFILE y cambiando de rama y nuevamente ejecutando cat NAMEFILE puedes ver ambos archivos y ver sus diferencias.
 
 
+        DESCARTAR TODOS LOS CAMBIOS REALIZADOS
+            git checkout .          Y si, es así.
+            
     TRAERNOS LOS CAMBIOS DE UNA RAMA A OTRA
         Debemos ubicarnos en la rama a la que se quieren traer esos cambios y ejecutar
             git merge NAMERAMA
 
+
+ESTO NO CREO QUE LO USES
+    git stash
+        Aquellos cambios que hiciste a los archivos los guardará como localmente pero los archivos volverán a estar como en su inicio. Esto por si quieres no sé, no agregar lo tuyo aún, porque no lo has terminado aún, lo que haces es como guardarlo localmente y si luego quieres los puedes volver a poner (los cambios) en los archivos.
+    git stash apply
+        Para ahora sí traer esos cambios guardados en local.
 
 REPOSITORIO (Use this)
     Subir nuestro codigo a la nube con github
@@ -228,9 +239,16 @@ REPOSITORIO (Use this)
         git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
 
+        HAY UN MAN QUE LA HACE ASÍ 
+            git push --set-upstream origin NAMERAMA
 
-    Traer cambios del repo
+
+    Traer cambios de esa rama del repo
         git pull
+        Cuando te cambies de rama con checkout procura hacer un git pull (Pero ya sabes si alguien la modificó y subió al repo vigila eso porque va a reemplazar en tu local)
+
+
+
 
 
 REPOSITORIO 2 (Clonar repo)
@@ -257,8 +275,10 @@ REPOSITORIO 3 (Crear repo según Github)
 
 REPOSITORIO 4 (Con UI Grafica)
     Descargando GitHub al escritorio
-    En navegador haces pull request desde la rama que quieres unir a la que se va a unir, y luego lo confirmas.
 
+    PULL REQUEST
+        Solicitar unir esta rama en la que estoy a otra, luego en el navegador lo confirmas con Merge Pull Request y Confirm Merge
+        Para los conflictos, resuelves o manualmente o desde el navegador, en el navegador se ve mas visual y lo que te toca es borrar todo lo que te aparece y dejar tal cual el codigo que va a quedar realmente.
 
 
 RAMAS
@@ -270,6 +290,16 @@ RAMAS
 
     Arreglos pequeños Hotfix y se aumenta el numero final V0.1 V0.2 V0.3
     Versión completa con todo, reuniendo los errores ya reparados V1.0 V2.0 V3.0
+
+Lo ideal es hacer merge primero un desarrollador y luego otro
+
+README.md
+    Archivo sobre de que trata el proyecto y como inicializarlo
+    # Titulo        -> Va al inicio, es un titulo
+    # Sutitulo       
+
+    Dependiendo de como lo escribas saldrá renderizado así en GITHUB y la gente lo verá así, ésta pagina ayuda a crearlo
+    https://www.makeareadme.com/    
 
 
 ERRORES 
