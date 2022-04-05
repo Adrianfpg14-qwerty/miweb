@@ -228,6 +228,10 @@ REPOSITORIO (Use this)
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
 
 
+    Traer cambios del repo
+        git pull
+
+
 REPOSITORIO 2 (Clonar repo)
     Lo creas en github y copias el https en Code, te ubicas en un lugar donde se descargará la carpeta y das:
     git clone   https://github.com/Adrianfpg14-qwerty/repo2.git
