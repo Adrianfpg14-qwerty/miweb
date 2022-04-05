@@ -5,6 +5,8 @@ Usos
 -Trabajar en equipo
 -Cuando se introdujo un error
 
+
+UN REPOSITORIO es un lugar para almacenar el codigo de forma ordenada y ordenada.
 Hay herramientas graficas para ver los cambios y demas pero tienen sus limitaciones, la versión de terminal es la mas utilizada y la mas completa.
 
 
@@ -217,6 +219,12 @@ REPOSITORIO
         Si tienes otra rama en el local, y la quieres subir al repo:
         git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
+
+
+REPOSITORIO 2
+    Lo creas en github y copias el https en Code, te ubicas en un lugar donde se descargará la carpeta y das:
+    git clone   https://github.com/Adrianfpg14-qwerty/repo2.git
+                https://github.com/USUARIODUEÑO/NAMEREPO.git
 
     
 ERRORES 
