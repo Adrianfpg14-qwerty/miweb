@@ -223,6 +223,7 @@ REPOSITORIO (Use this)
         git push
             Despues del commit (trabaja solo en local) sube los cambios de la rama local en el repo (Ahora si global)
 
+    Añadir rama nueva al repo
         Si tienes otra rama en el local, y la quieres subir al repo:
         git checkout NAMEOTRARAMA           Te cambias en Git Bash de rama
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
@@ -253,6 +254,23 @@ REPOSITORIO 3 (Crear repo según Github)
         git remote add origin git@github.com:Adrianfpg14-qwerty/NAMEREPO.git    -> La unes al repo
         git push -u origin NAMERAMA                                             -> La subes al repo
     
+
+REPOSITORIO 4 (Con UI Grafica)
+    Descargando GitHub al escritorio
+    En navegador haces pull request desde la rama que quieres unir a la que se va a unir, y luego lo confirmas.
+
+
+
+RAMAS
+    Master          Main, sin mas
+    Hotfix          Para corregir errores, crea una por cada error. Cada vez que se hace un hotfix se aumenta el hotfix de la versión V0.1 V0.2 V0.3, no es una versión completa como V1.0 la versión completa sale desde Release. Por cierto cuando se hace un hotfix no solo va a la master inmediatamente sino que también va a Develop para que quede allá el error arreglado.
+    Release         La versión que saldrá, versión completa V1.0 luego V2.0.
+    Develop         Desarrollo en sí, es la secundaría, de aquí va a la Master, es la preMaster por así decirla
+    Feature         Para una funcionalidad antes de unirla, una para cada funcionalidad supongo
+
+    Arreglos pequeños Hotfix y se aumenta el numero final V0.1 V0.2 V0.3
+    Versión completa con todo, reuniendo los errores ya reparados V1.0 V2.0 V3.0
+
 
 ERRORES 
     GIT Bash (backspace goes forward like an space)
