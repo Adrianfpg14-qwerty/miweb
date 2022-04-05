@@ -43,14 +43,19 @@ mv OLDNAMEFILE NEWNAMEFILE  -> Renombrar archivos y directorios/carpetas
 
 MISCELANEOS
 git config -h (Para realizar mas configuraciones en git si te apetece)
-clear (ctrl + L)	-> Limpiar pantalla
-code .              -> Dentro del proyecto, abre VS Code
-explorer .          -> Para abrir el explorador de archivos de windows en ese directorio
-cat NAMEFILE        -> Ver un archivo
+clear (ctrl + L)	                                    -> Limpiar pantalla
+code .                                                  -> Dentro del proyecto, abre VS Code
+explorer .                                              -> Para abrir el explorador de archivos de windows en ese directorio
+cat NAMEFILE                                            -> Ver un archivo
+echo "lo que va dentro escrito" >> NAMEFILE.extension   -> Crear archivo desde consola
+    echo >> NAMEFILE.extension (short form if u don't want to write inside something)
+git branch -h                                           -> -h al final de algo para saber informacion
+
 
 
 COMANDOS PROYECTO
 git init		    -> Debes estar ya dentro del directorio (Creará una carpeta/directorio .git dentro, que estará oculto para listarlo debes usar "ls -a") 
+    Inicializa el proyecto
 
 git status          -> Para ver el estado actual de nuestro repositorio.
     En que rama nos encontramos
@@ -154,7 +159,8 @@ BRANCH Y MERGE
     SABER EN QUE RAMA NOS ENCONTRAMOS
     La rama main es la principal.
     git Branch          -> Para saber en que rama nos encontramos. La que esté en verde con el asterisco * a la izq es la rama en la que nos encontramos.
-    
+
+
     CREAR UNA RAMA
     git checkout -b NAMERAMA
         git checkout -b features/name-de-la-funcionalidad   -> Algunas empresas lo hacen así
@@ -180,9 +186,10 @@ BRANCH Y MERGE
             git merge NAMERAMA
 
 
-REPOSITORIO
+REPOSITORIO (Use this)
     Subir nuestro codigo a la nube con github
     New repository, name, public, not check nothing
+        El name por practica coloca separados con guiones ejm: curso-de-practica
     Copia y pega en git 
 
     Unirnos al repo
@@ -221,12 +228,28 @@ REPOSITORIO
         git push -u origin NAMEOTRARAMA     Creas la rama en el repo y la subes
 
 
-REPOSITORIO 2
+REPOSITORIO 2 (Clonar repo)
     Lo creas en github y copias el https en Code, te ubicas en un lugar donde se descargará la carpeta y das:
     git clone   https://github.com/Adrianfpg14-qwerty/repo2.git
                 https://github.com/USUARIODUEÑO/NAMEREPO.git
 
+    Tambien sirve para clonar un repositorio al local ya sea propio, compartido con otro colaborador o publico
+
+
+REPOSITORIO 3 (Crear repo según Github)
+    CREAR REPOSITORIO EN GIT BASH
+        Crear repositorio primero en git
+        Ubicado en carpeta local
+        
+        echo "Esto va dentro del readme" >> README.md                           -> Creas un archivo
+        git init                                                                -> Inicializas el proyecto
+        git add README.md                                                       -> Pal STAGE
+        git commit -m "first commit"                                            -> Commit
+        git branch -M NAMERAMA                                                  -> Creas la rama
+        git remote add origin git@github.com:Adrianfpg14-qwerty/NAMEREPO.git    -> La unes al repo
+        git push -u origin NAMERAMA                                             -> La subes al repo
     
+
 ERRORES 
     GIT Bash (backspace goes forward like an space)
         Right click on the menu/title bar of git bash, select options, click on terminal from the options on the left, under the 'type' dropdown, select 'xterm', then apply and save. Now open a new git bash and it should work :D.
